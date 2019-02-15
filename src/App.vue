@@ -35,7 +35,7 @@
       </v-toolbar-items>
     </v-toolbar>
     <main>
-      <router-view></router-view>
+      <router-view id="main-view"></router-view>
     </main>
   </v-app>
 </template>
@@ -60,6 +60,13 @@
     }
   }
 </script>
+<style>
+#main-view, main{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+</style>
 
 <style lang="stylus">
   @import './stylus/main'

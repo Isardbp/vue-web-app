@@ -1,16 +1,7 @@
 <template>
- <v-app id="inspire">
-  <v-container id="generalContainer">
-    <v-layout row wrap>
-        <v-toolbar>
-          <v-toolbar-title>Pensar Diseny</v-toolbar-title>
-        </v-toolbar>
-          <v-carousel>
-            <v-carousel-item v-for="(item,i) in items" v-bind:src="item.src" :key="i"></v-carousel-item>
-          </v-carousel>
-    </v-layout>
-  </v-container>
-  </v-app>
+ <v-parallax id="parallax"
+    src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+  ></v-parallax>
 </template>
 
 <script>
@@ -28,6 +19,11 @@
 </script>
 
 <style>
+  #parallax{
+    height: 100%;
+    width: 100%;
+
+  }
   #generalContainer{
     padding-left: 0px;
     padding-right: 0px;
