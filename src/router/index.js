@@ -7,6 +7,8 @@ import Signin from '@/components/User/Signin'
 import BienesRaices from '@/components/BienesRaices/BienesRaices'
 import ProyectosPropios from '@/components/ProyectosPropios/ProyectosPropios'
 import Startups from '@/components/Startups/Startups'
+import CreateProject from '@/components/ProyectosPropios/CreateProject'
+import Project from '@/components/ProyectosPropios/Project'
 
 Vue.use(Router)
 
@@ -41,6 +43,16 @@ export default new Router({
       path: '/proyectospropios',
       name: 'ProyectosPropios',
       component: ProyectosPropios
+    },
+    {
+      path: '/proyectospropios/new',
+      name: 'CreateProject',
+      component: CreateProject
+    },
+    {
+      path: '/proyectospropios/:id',
+      name: 'Project',
+      component: Project
     },
     {
       path: '/startups',
